@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headers">
+            <h1>Learn Dutch</h1>
+            <h2>Leer Nederlands</h2>
+        </div>
+        <div id="buttons">
+            <button onclick="createFlashcard('picture')">Picture</button>
+            <button onclick="createFlashcard('word')">Word</button>
+        </div>
+    </header>
+    <main>
+        <section id="flashcard-container">
+            <div id="flashcard" onclick="flipCard()">
+
+            </div>
+            <button onclick="createFlashcard(currentMode)">Next question</button>
+        </section>
+    </main>
+
+</body>
+
+</html>
