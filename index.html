@@ -7,7 +7,6 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -17,6 +16,13 @@
             <h2>Leer Nederlands</h2>
         </div>
         <div id="buttons">
+            <select name="categories" id="categories" onchange="changeCategory()">
+                <option value="vehicles">Vehicles</option>
+                <option value="animals">Animals</option>
+                <option value="cityscapes">Cityscapes</option>
+                <option value="furniture">Furniture</option>
+                <option value="food">Food</option>
+            </select>
             <button onclick="createFlashcard('picture')">Picture</button>
             <button onclick="createFlashcard('word')">Word</button>
         </div>
@@ -29,7 +35,7 @@
             <button onclick="createFlashcard(currentMode)">Next question</button>
         </section>
     </main>
-
+    <script src="index.js"></script>
 </body>
 
 </html>
